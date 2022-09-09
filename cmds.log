@@ -1,0 +1,27 @@
+    1  history
+    2  mkdir WKST2
+    3  cd WKST2/
+    4  pwd
+    5  git init
+    6  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    7  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+    8  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc
+    9  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   10  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   11  grep -P '\tY\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   12  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt >> err.txt
+   13  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt 2> err.txt
+   14  less counts.txt
+   15  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt 2> err.txt
+   16  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt 2> err.txt
+   17  grep -P '\tY\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt 2> err.txt
+   18  vi counts.txt
+   19  vi err.txt
+   20  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+   21  less counts.txt
+   22  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc >
+   23  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+   24  vi counts.txt
+   25   grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+   26  vi counts.txt
+   27  history > cmds.log

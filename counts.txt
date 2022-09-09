@@ -1,0 +1,9 @@
+ 229345 44402549 26242641
+ 1      315         710
+ 2876173 505766304 2976270807
+ 1      584        3410
+
+first number = line count
+middle number = word count
+third number = character count
+
